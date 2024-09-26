@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 0;
+    padding: 0 30px;
+}
+
+/* Adjusted the logo to stay to the left */
+.logo {
+    margin-right: auto;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Navigation Links */
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #0078d7;
+}
+
+/* Specific Styles for "More+" (orange) and "Try Live 12 for free" (blue) */
+.nav-links.left-nav li:last-child a {
+    color: orange; /* More+ link in orange */
+}
+
+.nav-links.right-nav li:first-child a {
+    color: #0078d7; /* Try Live 12 for free in blue */
+}
+
+/* Aligning Left and Right Navigation Links */
+.left-nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-right: auto; /* Ensures it aligns to the left */
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+/* Section with Links (About, Jobs, Apprenticeships) */
+.section-links {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.section-links a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight:bold;
+    font-style: italic;
+}
+
+.section-links a:hover {
+    color: #0078d7;
+}
+
+/* Full-Width Image */
+.full-width-image {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .nav-links li {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links li {
+        margin-left: 5px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+}
